@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+header{
+    width: 100%;
+    
+    background-color: #cecece;
+}
+nav{
+    width: 400px;
+    height: 50px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul{
+    list-style: none;
+
+}
+nav li{
+    margin-bottom: 5px;
+    float: left;
+}
+nav ul a{
+    display: block;
+    margin: 0 10px;
+    border-radius: 20px;
+    width: auto;
+    padding: 5px 20px;
+    background-color: orange;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+
+}
+nav ul a :hover{
+    color:white;
+    background-color: grey;
+}
+.titre{
+    width: auto;
+    line-height: 80px;
+    padding: 10px 20px;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    background-color: skyblue;
+    border: solid 2px orange;
+}
+
+.id{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: #a4defd;
+    margin: 10px;
+    margin-right: 10px;
+    
+}
+.in{
+    padding-top: 30px;
+}
+.mess{
+width: 100px;
+padding-top: 15px;
+margin: 10px;
+}
+.div{
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px 40px;
+    width: 300px;
+}
+.min{
+    width: 1000px;
+    height: 80px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+}
+.menu{
+    padding: 20px;
+    overflow: hidden;
+    
+
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    float: right;
+}
+.menu ul li{
+    color: #000;
+    margin-right: 10px;
+    text-transform: uppercase;
+    list-style-type: none;
+
+    padding: 2px;
+    border-radius: 5px 5px;
+    text-decoration: none;
+}
+.menu ul li a {
+    color: #000;
+}
+
+.menu ul li:hover{
+    background-color: #653adc;
+    color: #fff;
+}
+
+.toc{
+    margin-top: 40px;
+    padding: 30px 100px;
+   
+    width: 80%;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.log{
+    margin: 10px;
+    padding-top: 70px;
+    font-size: 2em;
+    text-align: center;
+    
+}
+footer{
+    text-align: center;
+    display: block;
+    background-color: black;
+    height: 100px;
+
+}
+footer p{
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    
+}
+.con ul{
+    display: flex;
+    list-style: none;
+    float: right;    
+}
+.con ul li{
+    color: #fff;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 5px 5px;
+    float: left;
+}
+.con ul li a {
+    color: #fff;
+    
+}
+
+.con ul li:hover{
+    background-color: #653adc;
+    color: #fff;
+}
+
