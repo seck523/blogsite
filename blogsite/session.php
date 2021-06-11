@@ -1,23 +1,11 @@
 <?php 
 	session_start();
+    include ('config.php');
+    echo "Bienvenue".$_SESSION['login'];
+if(!isset($_SESSION['login'])){
+    header('Location: login.php');
 
-
-	
-	
-include ('config.php');
-
-if(isset($_POST['valider'])){
-    if(!empty($_POST['login']) AND !empty($_POST['message'])){
-        $login = htmlspecialchars($_POST['login']);
-        $message = nl2br(htmlspecialchars($_POST['message']));
-
-        $insererMessage = $bdd->prepare('INSERT INTO messages(login, message) VALUES(?, ?)');
-        $insererMessage->execute(array($login, $message));
-    }else{
-        echo "Veuillez completez votre votre pseudo";
-    }                                                                   
 }
-    
 
  ?>
 
@@ -36,7 +24,6 @@ if(isset($_POST['valider'])){
 
   gtag('config', 'UA-197593404-1');
 </script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,10 +38,11 @@ if(isset($_POST['valider'])){
 <nav>
 <ul>
 <li><a href="login.php">Connexion</a></li>
-<li><a href="inscription.php">S'incrire</a></li>
-<li><a href="deconnexion.php">Déconnexion</a></li>
+<li><a href="inscription.php">S'inscrire</a></li>
+
 <?php
-if(isset($_SESSION['nom'])){
+if(isset($_SESSION['login'])){
+echo '<li><a href="deconnexion.php">Déconnexion</a></li>';
    
 }
 ?>
